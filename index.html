@@ -8,7 +8,6 @@
         background-color: #000;
         color: #FFA500;
         font-family: Arial, sans-serif;
-        margin: 0;
         padding: 20px;
       }
 
@@ -19,38 +18,23 @@
       p {
         color: #ccc;
       }
-
-      /* تخصيص حاوية الـ iframe */
-      .chat-container {
-        width: 100%;
-        height: 80vh;
-        border: 2px solid #FFA500;
-        border-radius: 10px;
-        overflow: hidden;
-        margin-top: 20px;
-      }
-
-      iframe {
-        width: 100%;
-        height: 100%;
-        border: none;
-      }
     </style>
   </head>
 
   <body>
-    <h2>👋 Welcome to Grand Continental Hotel</h2>
+    <h2>👋 Hello! I'm the AI assistant for Grand Continental Hotel.</h2>
     <p>
-      I'm your virtual assistant. Ask me anything about room bookings, facilities,
-      or nearby attractions. Available 24/7!
+      Welcome to one of the most prestigious hotels in the region.
+      I'm here to help you with any questions about rooms, reservations,
+      amenities, or local attractions. Feel free to ask!
     </p>
 
-    <div class="chat-container">
-      <iframe
-        src="https://chatling.ai/embed/1845453434"
-        allow="microphone; autoplay"
-        title="Chat Assistant"
-      ></iframe>
-    </div>
+    <script>
+      window.chtlConfig = {
+        chatbotId: "1845453434",
+        theme: "dark", // ✅ أفضل ما يمكن استخدامه لتغيير الشكل
+      };
+    </script>
+    <script async data-id="1845453434" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
   </body>
 </html>
