@@ -2,62 +2,55 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>AI Chatling</title>
-
-    <!-- ✅ تخصيص الألوان البرتقالي × الأسود -->
+    <title>Grand Continental Hotel Assistant</title>
     <style>
-      /* لون الخلفيات */
-      .chtl-launcher,
-      .chtl-container,
-      .chtl-frame {
-        background-color: #000 !important;
+      body {
+        background-color: #000;
+        color: #FFA500;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
       }
 
-      /* النص البرتقالي */
-      .chtl-message,
-      .chtl-title,
-      .chtl-subtitle {
-        color: #FFA500 !important;
+      h2 {
+        color: #FFA500;
       }
 
-      /* رسالة المستخدم */
-      .chtl-message.user {
-        background-color: #FFA500 !important;
-        color: #000 !important;
+      p {
+        color: #ccc;
       }
 
-      /* رسالة البوت */
-      .chtl-message.bot {
-        background-color: #222 !important;
-        color: #FFA500 !important;
+      /* تخصيص حاوية الـ iframe */
+      .chat-container {
+        width: 100%;
+        height: 80vh;
+        border: 2px solid #FFA500;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 20px;
       }
 
-      /* زر الإرسال */
-      .chtl-send-button {
-        background-color: #FFA500 !important;
-        color: #000 !important;
-      }
-
-      /* خانة الإدخال */
-      .chtl-input {
-        background-color: #111 !important;
-        color: #FFA500 !important;
-        border-color: #FFA500 !important;
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
       }
     </style>
   </head>
 
   <body>
-    <h2>Hello! I'm the AI assistant for Grand Continental Hotel.</h2>
+    <h2>👋 Welcome to Grand Continental Hotel</h2>
     <p>
-      Welcome to one of the most prestigious hotels in the region.
-      I'm here to help you with any questions about rooms, reservations,
-      amenities, or local attractions. Feel free to ask!
+      I'm your virtual assistant. Ask me anything about room bookings, facilities,
+      or nearby attractions. Available 24/7!
     </p>
 
-    <script>
-      window.chtlConfig = { chatbotId: "1845453434" };
-    </script>
-    <script async data-id="1845453434" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+    <div class="chat-container">
+      <iframe
+        src="https://chatling.ai/embed/1845453434"
+        allow="microphone; autoplay"
+        title="Chat Assistant"
+      ></iframe>
+    </div>
   </body>
 </html>
