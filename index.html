@@ -3,10 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <title>AI Chatling</title>
+
+    <!-- ✅ تخصيص الألوان البرتقالي × الأسود -->
+    <style>
+      /* لون الخلفيات */
+      .chtl-launcher,
+      .chtl-container,
+      .chtl-frame {
+        background-color: #000 !important;
+      }
+
+      /* النص البرتقالي */
+      .chtl-message,
+      .chtl-title,
+      .chtl-subtitle {
+        color: #FFA500 !important;
+      }
+
+      /* رسالة المستخدم */
+      .chtl-message.user {
+        background-color: #FFA500 !important;
+        color: #000 !important;
+      }
+
+      /* رسالة البوت */
+      .chtl-message.bot {
+        background-color: #222 !important;
+        color: #FFA500 !important;
+      }
+
+      /* زر الإرسال */
+      .chtl-send-button {
+        background-color: #FFA500 !important;
+        color: #000 !important;
+      }
+
+      /* خانة الإدخال */
+      .chtl-input {
+        background-color: #111 !important;
+        color: #FFA500 !important;
+        border-color: #FFA500 !important;
+      }
+    </style>
   </head>
+
   <body>
     <h2>Hello! I'm the AI assistant for Grand Continental Hotel.</h2>
-    <p>Welcome to one of the most prestigious hotels in the region. I'm here to help you with any questions about rooms, reservations, amenities, or local attractions. Feel free to ask!</p>
+    <p>
+      Welcome to one of the most prestigious hotels in the region.
+      I'm here to help you with any questions about rooms, reservations,
+      amenities, or local attractions. Feel free to ask!
+    </p>
 
     <script>
       window.chtlConfig = { chatbotId: "1845453434" };
